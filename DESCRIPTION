@@ -1,22 +1,10 @@
-Package: yourpackage
-Title: My Supper API Wrapper
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "Colin",
-           family = "Fay",
-           role = c("cre", "aut"),
-           email = "contact@colinfay.me")
-Description: A long description of this super package I'm
-    working on.
+Package: SC2API
+Title: Blizzard SC2 API Wrapper
+Version: 0.1
+Authors@R: person('Samuel', 'Morrissette', email = 'samuel.morrissette01@gmail.com', role = c('cre', 'aut'))
+Description: A group of functions to make calls to the Blizzard API.
 License: MIT + file LICENSE
-URL: http://this
-BugReports: http://that
-Imports: 
-    attempt,
-    curl,
-    httr,
-    jsonlite,
-    purrr
-Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+URL: {{ URL }}
+BugReports: {{ BugReports }}
+Encoding: UTF-8

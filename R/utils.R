@@ -1,5 +1,3 @@
-#' @importFrom attempt stop_if_not
-#' @importFrom curl has_internet
 #' @importFrom httr GET
 #' @importFrom httr add_headers
 #' @importFrom httr content
