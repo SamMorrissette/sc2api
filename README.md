@@ -41,7 +41,7 @@ set_token(get_token("YOUR CLIENT ID", "YOUR CLIENT SECRET"))
 ``` r
 data <- ladder_gm_leaderboard(1) # An argument of "1" corresponds to the NA ladder.
 top10 <- data$ladderTeams[1:10] # Extract the top 10 players
-playerMMR <- sapply(top10, function(x) x$mmr) # Extract the "mmr" vector from each player. 
-print(playerMMR)
-#>  [1] 6456 6350 6300 6279 6252 6228 6128 6086 6052 6044
+top10MMR <- sapply(top10, function(x) x$mmr) # Extract the "mmr" vector from each player. 
+print(top10MMR)
+#>  [1] 6456 6350 6300 6279 6252 6228 6128 6086 6054 6052
 ```
