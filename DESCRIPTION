@@ -5,8 +5,6 @@ Authors@R: person('Samuel', 'Morrissette', email = 'samuel.morrissette01@gmail.c
 Description: A group of functions to make calls to the Blizzard API.
 License: MIT + file LICENSE
 LazyData: true
-URL: {{ URL }}
-BugReports: {{ BugReports }}
 Encoding: UTF-8
 Imports: 
     httr
@@ -14,3 +12,4 @@ Suggests:
     rmarkdown,
     knitr
 VignetteBuilder: knitr
+RoxygenNote: 7.1.1

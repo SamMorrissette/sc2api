@@ -212,7 +212,6 @@ legacy_ladders <- function(region_id,realm_id,profile_id) {
 #' @inheritParams profile_metadata
 #' @export
 legacy_match_history <- function(region_id,realm_id,profile_id) {
-  region_id <- convert_region(region)
   endpoint <- paste0('sc2/legacy/profile/',
                      region_id, '/',
                      realm_id, '/',
