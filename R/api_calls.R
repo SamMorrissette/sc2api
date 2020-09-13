@@ -3,7 +3,7 @@
 #' @name blizzard
 #' @description A list of functions to make calls to the Blizzard API. Before using any of the
 #'    functions, ensure that an access token is set as an environment variable by using
-#'    \code{\link{set_token()}}.
+#'    \code{\link{set_token}}.
 #'
 #'    Explanations for each of the functions can be found in the
 #'    \href{https://develop.battle.net/documentation/starcraft-2}{Starcraft II API documentation}.
