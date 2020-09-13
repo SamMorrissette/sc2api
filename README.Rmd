@@ -13,28 +13,33 @@ knitr::opts_chunk$set(
 )
 ```
 
-# yourpackage
+# SC2API
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
-The goal of yourpackage is to ...
+The goal of SC2API is to ...
 
 ## Installation
 
-You can install the released version of yourpackage from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of SC2API from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-install.packages("yourpackage")
+install.packages("SC2API")
 ```
 
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("SamMorrissette/sc2api")
+```
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-library(yourpackage)
+library(SC2API)
 ## basic example code
 ```
 
