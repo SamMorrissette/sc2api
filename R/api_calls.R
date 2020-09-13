@@ -324,3 +324,13 @@ league_get_league_data <- function(season_id,queue_id,team_type,league_id) {
   make_request(endpoint)
 }
 
+#' Season Data
+#'
+#' Provides start and ending times for a given season.
+#' @inheritParams league_get_league_data
+#' @export
+season_data <- function(season_id) {
+  endpoint <- paste0('/data/sc2/season/',
+                     season_id)
+  make_request(endpoint)
+}
