@@ -7,53 +7,41 @@
 
 <!-- badges: end -->
 
-The goal of SC2API is to …
+The goal of SC2API is to build a simple and easy-to-use API wrapper for
+the Blizzard Starcraft II API in the R programming language.
 
 ## Installation
 
-You can install the released version of SC2API from
-[CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("SC2API")
-```
-
-And the development version from [GitHub](https://github.com/) with:
+You can install the development version of SC2API from
+[GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("SamMorrissette/sc2api")
 ```
 
-## Example
+## Example Usage
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example to obtain the MMR (match-maker rating) of the
+current top 10 players in the North America Grandmaster leaderboard.
+
+First, you must set your own token in the R environment by supplying
+your own client ID and client secret. For more information on how to
+obtain these, visit [Getting
+Started](https://develop.battle.net/documentation/guides/getting-started).
 
 ``` r
 library(SC2API)
-## basic example code
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+set_token(get_token("YOUR CLIENT ID", "YOUR CLIENT SECRET"))
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub\!
+``` r
+data <- ladder_gm_leaderboard(1) # An argument of "1" corresponds to the NA ladder.
+top10 <- data$ladderTeams[1:10] # Extract the top 10 players
+playerMMR <- sapply(top10, function(x) x$mmr) # Extract the "mmr" vector from each player. 
+print(playerMMR)
+#>  [1] 6456 6350 6300 6279 6252 6228 6128 6086 6052 6044
+```
