@@ -34,5 +34,6 @@ use_news_md()
 # Get the dependencies
 use_package("httr")
 
+use_readme_rmd()
 # Clean your description
 use_tidy_description()
