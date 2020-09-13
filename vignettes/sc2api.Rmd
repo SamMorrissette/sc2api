@@ -1,8 +1,8 @@
 ---
-title: "SC2API Introduction"
+title: "sc2api"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{SC2API Introduction}
+  %\VignetteIndexEntry{sc2api}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

@@ -8,3 +8,9 @@ LazyData: true
 URL: {{ URL }}
 BugReports: {{ BugReports }}
 Encoding: UTF-8
+Imports: 
+    httr
+Suggests: 
+    rmarkdown,
+    knitr
+VignetteBuilder: knitr

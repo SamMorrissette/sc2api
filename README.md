@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
 The goal of SC2API is to build a simple and easy-to-use API wrapper for
@@ -28,7 +30,7 @@ current top 10 players in the North America Grandmaster leaderboard.
 First, you must set your own token in the R environment by supplying
 your own client ID and client secret. For more information on how to
 obtain these, visit [Getting
-Started](https://develop.battle.net/documentation/guides/getting-started).
+Started](https://https://develop.battle.net/documentation/guides/getting-started).
 
 ``` r
 library(SC2API)
