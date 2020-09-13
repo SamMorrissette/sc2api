@@ -7,8 +7,8 @@
 league_get_league_data(season_id, queue_id, team_type, league_id)
 }
 \arguments{
-\item{season_id}{A numeric argument indicating a particular ladder season. The Blizzard API
-only accepts season 28 and higher (i.e. data prior to this season is unavailable).}
+\item{season_id}{A numeric argument indicating a particular ladder season. Currently, league data
+is only available for season 28 and higher (i.e. data prior to this season is inaccessible).}
 
 \item{queue_id}{\itemize{
    \item 1 = WoL 1v1
