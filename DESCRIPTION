@@ -1,25 +1,10 @@
 Package: SC2API
 Title: Blizzard SC2 API Wrapper
 Version: 0.1
-Authors@R: 
-    person(given = "Samuel",
-           family = "Morrissette",
-           role = c("cre", "aut"),
-           email = "samuel.morrissette01@gmail.com")
-Description: A group of functions to make calls to the Blizzard
-    API.
+Authors@R: person('Samuel', 'Morrissette', email = 'samuel.morrissette01@gmail.com', role = c('cre', 'aut'))
+Description: A group of functions to make calls to the Blizzard API.
 License: MIT + file LICENSE
+LazyData: true
 URL: {{ URL }}
 BugReports: {{ BugReports }}
-Imports: 
-    httr
 Encoding: UTF-8
-LazyData: true
-RoxygenNote: 7.1.1
-<<<<<<< HEAD
-Suggests: 
-    rmarkdown,
-    knitr
-VignetteBuilder: knitr
-=======
->>>>>>> 76202e1f07e831fd4b4aba37404e542e5b6aafb2

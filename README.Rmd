@@ -16,37 +16,46 @@ knitr::opts_chunk$set(
 # SC2API
 
 <!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
-The goal of SC2API is to build a simple and easy-to-use API wrapper for the Blizzard Starcraft II API in the R programming language.
-
+The goal of SC2API is to ...
 
 ## Installation
-You can install the development version of SC2API from [GitHub](https://github.com/) with:
+
+You can install the released version of SC2API from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("SC2API")
+```
+
+And the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("SamMorrissette/sc2api")
 ```
-## Example Usage
+## Example
 
-This is a basic example to obtain the MMR (match-maker rating) of the current top 10 players in the North America Grandmaster leaderboard. 
+This is a basic example which shows you how to solve a common problem:
 
-First, you must set your own token in the R environment by supplying your own client ID and client secret. For more information on how to obtain these, visit 
-[Getting Started](https://develop.battle.net/documentation/guides/getting-started).
-
-```{r Load Library}
+```{r example}
 library(SC2API)
+## basic example code
 ```
 
-```{r Set Token, eval=FALSE}
-set_token(get_token("YOUR CLIENT ID", "YOUR CLIENT SECRET"))
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r cars}
+summary(cars)
 ```
 
-```{r Get Data}
-data <- ladder_gm_leaderboard(1) # An argument of "1" corresponds to the NA ladder.
-top10 <- data$ladderTeams[1:10] # Extract the top 10 players
-playerMMR <- sapply(top10, function(x) x$mmr) # Extract the "mmr" vector from each player. 
-print(playerMMR)
+You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
+
+You can also embed plots, for example:
+
+```{r pressure, echo = FALSE}
+plot(pressure)
 ```
 
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!

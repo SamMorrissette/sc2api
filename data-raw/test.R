@@ -35,5 +35,7 @@ use_news_md()
 use_package("httr")
 
 use_readme_rmd()
+
+use_vignette("sc2api")
 # Clean your description
 use_tidy_description()
