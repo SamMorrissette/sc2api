@@ -33,9 +33,10 @@ use_news_md()
 
 # Get the dependencies
 use_package("httr")
-
+use_package("jsonlite")
+use_package("data.table")
 use_readme_rmd()
 
-use_vignette("sc2api")
+use_vignette("MMR_Distribution")
 # Clean your description
 use_tidy_description()

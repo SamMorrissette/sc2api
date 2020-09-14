@@ -7,7 +7,9 @@ License: MIT + file LICENSE
 LazyData: true
 Encoding: UTF-8
 Imports: 
-    httr
+    data.table,
+    httr,
+    jsonlite
 Suggests: 
     rmarkdown,
     knitr

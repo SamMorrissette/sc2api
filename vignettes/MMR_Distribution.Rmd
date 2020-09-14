@@ -1,8 +1,8 @@
 ---
-title: "sc2api"
+title: "MMR_Distribution"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{sc2api}
+  %\VignetteIndexEntry{MMR_Distribution}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
