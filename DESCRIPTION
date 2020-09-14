@@ -12,6 +12,7 @@ Imports:
     jsonlite
 Suggests: 
     rmarkdown,
-    knitr
+    knitr,
+    httptest
 VignetteBuilder: knitr
 RoxygenNote: 7.1.1

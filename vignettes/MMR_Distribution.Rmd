@@ -1,8 +1,8 @@
 ---
-title: "MMR_Distribution"
+title: "MMR Distribution in Current Season"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{MMR_Distribution}
+  %\VignetteIndexEntry{MMR Distribution in Current Season}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -12,8 +12,18 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+library(httptest)
+start_vignette("MMR Distribution in Current Season")
 ```
+
 
 ```{r setup}
 library(SC2API)
+test <- get_season_data(35)
+test
 ```
+
+```{r, include=FALSE}
+end_vignette()
+```
+
