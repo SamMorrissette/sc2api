@@ -923,53 +923,6 @@
             ]
         },
         {
-            "id": 2569005701368119296,
-            "rating": 6424,
-            "wins": 81,
-            "losses": 40,
-            "ties": 0,
-            "points": 2827,
-            "longest_win_streak": 14,
-            "current_win_streak": 2,
-            "current_rank": 22,
-            "highest_rank": 200,
-            "previous_rank": 22,
-            "join_time_stamp": 1598558374,
-            "last_played_time_stamp": 1600123673,
-            "member": [
-                {
-                    "legacy_link": {
-                        "id": 2510474,
-                        "realm": 1,
-                        "name": "Kas#980",
-                        "path": "/profile/2510474/1/Kas"
-                    },
-                    "played_race_count": [
-                        {
-                            "race": {
-                                "en_US": "Terran"
-                            },
-                            "count": 121
-                        }
-                    ],
-                    "character_link": {
-                        "id": 2510474,
-                        "battle_tag": "MagicGnome#221204",
-                        "key": {
-                            "href": "https://eu.api.blizzard.com/data/sc2/character/MagicGnome-221204/2510474?namespace=prod"
-                        }
-                    },
-                    "clan_link": {
-                        "id": 417301,
-                        "clan_tag": "S<U+0422><U+0410>R",
-                        "clan_name": "Team STARCOM",
-                        "icon_url": "http://EU.depot.battle.net:1119/4d233164cd67c9ed6445fffe3d14757595dc9025d4258cf0235bcf61593f9d4f.clfl",
-                        "decal_url": "http://EU.depot.battle.net:1119/4d233164cd67c9ed6445fffe3d14757595dc9025d4258cf0235bcf61593f9d4f.clfl"
-                    }
-                }
-            ]
-        },
-        {
             "id": 9596870720856522752,
             "rating": 6405,
             "wins": 136,
@@ -978,7 +931,7 @@
             "points": 3485,
             "longest_win_streak": 9,
             "current_win_streak": 0,
-            "current_rank": 23,
+            "current_rank": 22,
             "highest_rank": 200,
             "previous_rank": 25,
             "join_time_stamp": 1598644778,
@@ -1005,6 +958,53 @@
                         "key": {
                             "href": "https://eu.api.blizzard.com/data/sc2/character/SeppiaPigra-25248/8984094?namespace=prod"
                         }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2569005701368119296,
+            "rating": 6381,
+            "wins": 81,
+            "losses": 41,
+            "ties": 0,
+            "points": 2827,
+            "longest_win_streak": 14,
+            "current_win_streak": 0,
+            "current_rank": 23,
+            "highest_rank": 200,
+            "previous_rank": 22,
+            "join_time_stamp": 1598558374,
+            "last_played_time_stamp": 1600124640,
+            "member": [
+                {
+                    "legacy_link": {
+                        "id": 2510474,
+                        "realm": 1,
+                        "name": "Kas#980",
+                        "path": "/profile/2510474/1/Kas"
+                    },
+                    "played_race_count": [
+                        {
+                            "race": {
+                                "en_US": "Terran"
+                            },
+                            "count": 122
+                        }
+                    ],
+                    "character_link": {
+                        "id": 2510474,
+                        "battle_tag": "MagicGnome#221204",
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/sc2/character/MagicGnome-221204/2510474?namespace=prod"
+                        }
+                    },
+                    "clan_link": {
+                        "id": 417301,
+                        "clan_tag": "S<U+0422><U+0410>R",
+                        "clan_name": "Team STARCOM",
+                        "icon_url": "http://EU.depot.battle.net:1119/4d233164cd67c9ed6445fffe3d14757595dc9025d4258cf0235bcf61593f9d4f.clfl",
+                        "decal_url": "http://EU.depot.battle.net:1119/4d233164cd67c9ed6445fffe3d14757595dc9025d4258cf0235bcf61593f9d4f.clfl"
                     }
                 }
             ]
@@ -2121,6 +2121,46 @@
             ]
         },
         {
+            "id": 14803878514050203648,
+            "rating": 6064,
+            "wins": 231,
+            "losses": 210,
+            "ties": 0,
+            "points": 3578,
+            "longest_win_streak": 8,
+            "current_win_streak": 1,
+            "current_rank": 50,
+            "highest_rank": 128,
+            "previous_rank": 77,
+            "join_time_stamp": 1597780779,
+            "last_played_time_stamp": 1600124530,
+            "member": [
+                {
+                    "legacy_link": {
+                        "id": 1260740,
+                        "realm": 1,
+                        "name": "llllllllllll#9860",
+                        "path": "/profile/1260740/1/llllllllllll"
+                    },
+                    "played_race_count": [
+                        {
+                            "race": {
+                                "en_US": "Terran"
+                            },
+                            "count": 441
+                        }
+                    ],
+                    "character_link": {
+                        "id": 1260740,
+                        "battle_tag": "Supremacy#2100",
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/sc2/character/Supremacy-2100/1260740?namespace=prod"
+                        }
+                    }
+                }
+            ]
+        },
+        {
             "id": 15112653264966909952,
             "rating": 6064,
             "wins": 538,
@@ -2129,7 +2169,7 @@
             "points": 3285,
             "longest_win_streak": 17,
             "current_win_streak": 0,
-            "current_rank": 50,
+            "current_rank": 51,
             "highest_rank": 151,
             "previous_rank": 68,
             "join_time_stamp": 1597953575,
@@ -2169,7 +2209,7 @@
             "points": 3486,
             "longest_win_streak": 5,
             "current_win_streak": 1,
-            "current_rank": 51,
+            "current_rank": 52,
             "highest_rank": 62,
             "previous_rank": 64,
             "join_time_stamp": 1598039978,
@@ -2209,7 +2249,7 @@
             "points": 3296,
             "longest_win_streak": 12,
             "current_win_streak": 0,
-            "current_rank": 52,
+            "current_rank": 53,
             "highest_rank": 77,
             "previous_rank": 62,
             "join_time_stamp": 1597175978,
@@ -2256,7 +2296,7 @@
             "points": 561,
             "longest_win_streak": 5,
             "current_win_streak": 1,
-            "current_rank": 53,
+            "current_rank": 54,
             "highest_rank": 200,
             "previous_rank": 0,
             "join_time_stamp": 1600113579,
@@ -2296,7 +2336,7 @@
             "points": 3619,
             "longest_win_streak": 11,
             "current_win_streak": 1,
-            "current_rank": 54,
+            "current_rank": 55,
             "highest_rank": 79,
             "previous_rank": 66,
             "join_time_stamp": 1598385573,
@@ -2330,46 +2370,6 @@
                         "clan_name": "3D!Clan",
                         "icon_url": "http://EU.depot.battle.net:1119/84222076326641a923de11e7eac055cfd5ffc250c96e5a59fe89eb4d7df4fc6b.clfl",
                         "decal_url": "http://EU.depot.battle.net:1119/160875a5431a0d3a0c6f25f4fd87ad23ee15ddfd20b0e788c1405f0b7f4aedc4.clfl"
-                    }
-                }
-            ]
-        },
-        {
-            "id": 14803878514050203648,
-            "rating": 6059,
-            "wins": 230,
-            "losses": 210,
-            "ties": 0,
-            "points": 3576,
-            "longest_win_streak": 8,
-            "current_win_streak": 0,
-            "current_rank": 55,
-            "highest_rank": 128,
-            "previous_rank": 77,
-            "join_time_stamp": 1597780779,
-            "last_played_time_stamp": 1600123818,
-            "member": [
-                {
-                    "legacy_link": {
-                        "id": 1260740,
-                        "realm": 1,
-                        "name": "llllllllllll#9860",
-                        "path": "/profile/1260740/1/llllllllllll"
-                    },
-                    "played_race_count": [
-                        {
-                            "race": {
-                                "en_US": "Terran"
-                            },
-                            "count": 440
-                        }
-                    ],
-                    "character_link": {
-                        "id": 1260740,
-                        "battle_tag": "Supremacy#2100",
-                        "key": {
-                            "href": "https://eu.api.blizzard.com/data/sc2/character/Supremacy-2100/1260740?namespace=prod"
-                        }
                     }
                 }
             ]
