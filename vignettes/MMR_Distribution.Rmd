@@ -17,31 +17,36 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+knitr::opts_chunk$set(fig.width=10, fig.height=8,fig.align = 'center') 
 
 library(httptest)
 start_vignette("MMR_Distribution")
 ```
 
-The SC2API package is an R wrapper for Blizzard's Starcraft II API. As an introduction to the package, it is an interesting and useful exercise to visualize the distribution of Matchmaking Rating (MMR) of the top Starcraft II players. For this exercise, we will limit our scope to the European region and investigate its Grandmaster league (i.e. the top 200 players in the region). 
+The SC2API package is an R wrapper for Blizzard's [Starcraft II API](https://develop.battle.net/documentation/starcraft-2). As an introduction to the package, it is an interesting and useful exercise to visualize the distribution of Matchmaking Rating (MMR) of the top Starcraft II players. For this exercise, we will limit our scope to the European region and investigate its Grandmaster league (i.e. the top 200 players in the region, although there may be less than 200 at any given time depending on player activity). 
 
-To begin, we will load the SC2API library and ggplot2, another package that is extremely useful for plotting and visualization.  
+To begin, we will load the SC2API package and ggplot2, another package that is extremely useful for plotting and visualization.  
 
 ```{r Setup}
 library(SC2API)
 library(ggplot2)
 ```
 
-Before using "get" functions of SC2API, we must first set an OAuth 2.0 access token as an environment variable so that all future API calls may use it for authorization. To receive this token, create a client in the
-\href{https://develop.battle.net/}{Blizzard Developer Portal} and obtain a valid client ID and
-client secret. For more information on getting started, refer to Blizzard's  \href{https://develop.battle.net/documentation/guides/getting-started}{Getting Started} document.
+# Authorization
 
-Once a client ID and client secret has been obtained, we will use \code{set_token} to set the token as an environment variable. Of course, you must replace the arguments with your own id and secret. 
+Before using the "get" functions of SC2API, we must first set an OAuth 2.0 access token as an environment variable so that all future API calls may use it for authorization. To receive this token, create a client in the
+[Blizzard Developer Portal](https://develop.battle.net/) and obtain a valid client ID and
+client secret. For more information on getting started, refer to Blizzard's  [Getting Started](https://develop.battle.net/documentation/guides/getting-started) document.
+
+Once a client ID and client secret has been obtained, we will use ```set_token``` to set the token as an environment variable. Of course, you must replace the arguments with your own id and secret. 
 
 ```{r Authorization, eval=FALSE}
 set_token("YOUR CLIENT ID", "YOUR CLIENT SECRET")
 ```
 
-To obtain the MMRs of players in the European Grandmaster league, we will first use the \code{get_league_data} to  obtain the ladder ID of the Grandmaster ladder in the current season (season #44).
+# Data Retrieval
+
+To obtain the MMRs of players in the European Grandmaster league, we will first use the ```get_league_data``` function to  obtain the ladder ID of the Grandmaster ladder in the current season (season #44).
 
 ```{r}
 data <- get_league_data(season_id = 43, 
@@ -51,7 +56,7 @@ data <- get_league_data(season_id = 43,
                         host_region = "eu")
 ```
 
-The queue_id argument "201" refers to the fact that we are looking for 1v1 in the current expansion (Legacy of the Void), team_type means that the teams are arranged beforehand (not particularly useful since this only applies to team games), and a league_id refers to the league of Grandmaster. To see other choices for these arguments, see the help documentation in \code{?get_League_data}.
+The queue_id argument "201" refers to the fact that we are looking for 1v1 in the current expansion (Legacy of the Void), team_type means that the teams are arranged beforehand (not particularly useful since this only applies to team games), and a league_id refers to the league of Grandmaster. To see other choices for these arguments, see the help documentation in ```?get_League_data```.
 
 Since leagues are often separated into tiers and further separated into divisions, we must specify which ladder ID we are actually looking for. Of course, there is only one tier and one division for Grandmaster league and so finding the appropriate ladder ID is relatively easy. For other leagues, finding a particular ladder ID may be slightly more difficult but can be completed using list indexing. 
 
@@ -60,7 +65,7 @@ ladder_id <- data$tier$division[[1]]$ladder_id
 ladder_id
 ```
 
-Now that we have a ladder ID, we can supply it as an argument to the \code{get_ladder_data} function to discover the MMRs of players within the league. The host_region argument must be set to "eu"" since that is the region with which we are currently concerned. 
+Now that we have a ladder ID, we can supply it as an argument to the ```get_ladder_data``` function to discover the MMRs of players within the league. The host_region argument must be set to "eu"" since that is the region with which we are currently concerned. 
 
 ```{r}
 ladder_data <- get_ladder_data(ladder_id = ladder_id, host_region = "eu")
@@ -73,7 +78,10 @@ mmr <- ladder_data$team$rating
 head(mmr)
 ```
 
-Finally, we can plot the distribution as a histogram using the ggplot2 package.
+# Visualization
+
+## Overall distribution
+Now that we have the necessary data, we can plot the distribution as a histogram using the ggplot2 package.
 
 ```{r}
 ggplot() +
@@ -81,9 +89,11 @@ ggplot() +
   theme_light()
 ```
 
-Although this is useful, it would also be interesting to look at the distribution by player race. We can accomplish this using simple data manipulation and the dplyr package. 
+Although this is useful, it would also be interesting to look at the distribution by player race. 
 
-First, we will obtain the race of each player in the league. This is accomplished using the sapply function. Then, we create a simple data frame with the MMR and races. Since there are so few random players, we will filter these out from the dataset (at the time of writing there is a single player in the Grandmaster league of Europe). 
+## Distribution by race
+First, we will obtain the race of each player in the league. This is accomplished using the ```sapply``` function. Then, we create a simple data frame with the MMR and races. Since there are so few random players, we will filter these out from the dataset (at the time of writing there is a single player in the Grandmaster league of Europe). 
+
 ```{r ByRace}
 races <- sapply(ladder_data$team$member, 
                 function(x) x$played_race_count[[1]]$race$en_US)
@@ -114,6 +124,9 @@ ggplot(df,aes(x = mmr)) +
   scale_color_manual(values = c('Orange','Blue','Red')) +
   theme_light()
 ```
+
+
+## Conclusion 
 
 This was a brief introduction to the SC2API package, but I hope that others are able to utilize the package in interesting ways. 
 
