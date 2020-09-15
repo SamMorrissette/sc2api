@@ -21,7 +21,8 @@ information on regionality, refer to
 \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}.}
 }
 \description{
-Provides static information (achievements, categories, criteria, and rewards) about SC2 profiles
+Provides static information (achievements, categories, criteria, and rewards)
+ about SC2 profiles
 in a given region.
 }
 \examples{

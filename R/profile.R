@@ -1,6 +1,7 @@
 #' Static Profile Data
 #'
-#' Provides static information (achievements, categories, criteria, and rewards) about SC2 profiles
+#' Provides static information (achievements, categories, criteria, and rewards)
+#'  about SC2 profiles
 #' in a given region.
 #'
 #' @family profile API calls
