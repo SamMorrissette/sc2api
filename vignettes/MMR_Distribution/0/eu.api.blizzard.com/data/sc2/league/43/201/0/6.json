@@ -1,12 +1,12 @@
 {
     "_links": {
         "self": {
-            "href": "https://eu.api.blizzard.com/data/sc2/league/44/201/0/6?namespace=prod"
+            "href": "https://eu.api.blizzard.com/data/sc2/league/43/201/0/6?namespace=prod"
         }
     },
     "key": {
         "league_id": 6,
-        "season_id": 44,
+        "season_id": 43,
         "queue_id": 201,
         "team_type": 0
     },
@@ -16,8 +16,8 @@
             "division": [
                 {
                     "id": 1,
-                    "ladder_id": 228611,
-                    "member_count": 196
+                    "ladder_id": 225291,
+                    "member_count": 180
                 }
             ]
         }

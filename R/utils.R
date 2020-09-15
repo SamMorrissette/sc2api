@@ -17,7 +17,7 @@ make_request <- function(endpoint,host_region) {
     stop('HTTP Error code 401: Unauthorized. Please ensure you have set a valid access token using set_token.')
   }
   httr::stop_for_status(response)
-  response <- jsonlite::fromJSON(content(response,as='text'))
+  response <- jsonlite::fromJSON(content(response,as='text', encoding="utf-8"))
   return(response)
 }
 

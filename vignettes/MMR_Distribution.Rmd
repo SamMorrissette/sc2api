@@ -18,10 +18,8 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 
-NOT_CRAN <- identical(tolower(Sys.getenv("NOT_CRAN")), "true")
-knitr::opts_chunk$set(purl = NOT_CRAN, eval=NOT_CRAN)
 library(httptest)
-start_vignette("vignettes/MMR_Distribution")
+start_vignette("MMR_Distribution")
 ```
 
 The SC2API package is an R wrapper for Blizzard's Starcraft II API. As an introduction to the package, it is an interesting and useful exercise to visualize the distribution of Matchmaking Rating (MMR) of the top Starcraft II players. For this exercise, we will limit our scope to the European region and investigate its Grandmaster league (i.e. the top 200 players in the region). 
@@ -45,8 +43,8 @@ set_token("YOUR CLIENT ID", "YOUR CLIENT SECRET")
 
 To obtain the MMRs of players in the European Grandmaster league, we will first use the \code{get_league_data} to  obtain the ladder ID of the Grandmaster ladder in the current season (season #44).
 
-```{r eval=NOT_CRAN}
-data <- get_league_data(season_id = 44, 
+```{r}
+data <- get_league_data(season_id = 43, 
                         queue_id = 201, 
                         team_type = 0, 
                         league_id = 6, 
@@ -64,7 +62,7 @@ ladder_id
 
 Now that we have a ladder ID, we can supply it as an argument to the \code{get_ladder_data} function to discover the MMRs of players within the league. The host_region argument must be set to "eu"" since that is the region with which we are currently concerned. 
 
-```{r, eval=NOT_CRAN}
+```{r}
 ladder_data <- get_ladder_data(ladder_id = ladder_id, host_region = "eu")
 ```
 
