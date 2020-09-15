@@ -481,6 +481,53 @@
             ]
         },
         {
+            "id": 17309285082728497152,
+            "rating": 6619,
+            "wins": 489,
+            "losses": 317,
+            "ties": 0,
+            "points": 4042,
+            "longest_win_streak": 21,
+            "current_win_streak": 2,
+            "current_rank": 12,
+            "highest_rank": 34,
+            "previous_rank": 14,
+            "join_time_stamp": 1592423971,
+            "last_played_time_stamp": 1600125564,
+            "member": [
+                {
+                    "legacy_link": {
+                        "id": 2442194,
+                        "realm": 1,
+                        "name": "Geralt#123",
+                        "path": "/profile/2442194/1/Geralt"
+                    },
+                    "played_race_count": [
+                        {
+                            "race": {
+                                "en_US": "Protoss"
+                            },
+                            "count": 806
+                        }
+                    ],
+                    "character_link": {
+                        "id": 2442194,
+                        "battle_tag": "Gerald#2199",
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/sc2/character/Gerald-2199/2442194?namespace=prod"
+                        }
+                    },
+                    "clan_link": {
+                        "id": 451584,
+                        "clan_tag": "Ex0n",
+                        "clan_name": "Real Exon Esports",
+                        "icon_url": "http://EU.depot.battle.net:1119/63e92b3f75ad41f71bfa8e8fe6dd19ad4b2d88eb87ae282da1a4d51956b4abc3.clfl",
+                        "decal_url": "http://EU.depot.battle.net:1119/63e92b3f75ad41f71bfa8e8fe6dd19ad4b2d88eb87ae282da1a4d51956b4abc3.clfl"
+                    }
+                }
+            ]
+        },
+        {
             "id": 6192711253006221312,
             "rating": 6619,
             "wins": 390,
@@ -489,7 +536,7 @@
             "points": 4036,
             "longest_win_streak": 9,
             "current_win_streak": 3,
-            "current_rank": 12,
+            "current_rank": 13,
             "highest_rank": 20,
             "previous_rank": 13,
             "join_time_stamp": 1594411171,
@@ -516,53 +563,6 @@
                         "key": {
                             "href": "https://eu.api.blizzard.com/data/sc2/character/ILI-21107/7736977?namespace=prod"
                         }
-                    }
-                }
-            ]
-        },
-        {
-            "id": 17309285082728497152,
-            "rating": 6607,
-            "wins": 488,
-            "losses": 317,
-            "ties": 0,
-            "points": 4037,
-            "longest_win_streak": 21,
-            "current_win_streak": 1,
-            "current_rank": 13,
-            "highest_rank": 34,
-            "previous_rank": 14,
-            "join_time_stamp": 1592423971,
-            "last_played_time_stamp": 1600123882,
-            "member": [
-                {
-                    "legacy_link": {
-                        "id": 2442194,
-                        "realm": 1,
-                        "name": "Geralt#123",
-                        "path": "/profile/2442194/1/Geralt"
-                    },
-                    "played_race_count": [
-                        {
-                            "race": {
-                                "en_US": "Protoss"
-                            },
-                            "count": 805
-                        }
-                    ],
-                    "character_link": {
-                        "id": 2442194,
-                        "battle_tag": "Gerald#2199",
-                        "key": {
-                            "href": "https://eu.api.blizzard.com/data/sc2/character/Gerald-2199/2442194?namespace=prod"
-                        }
-                    },
-                    "clan_link": {
-                        "id": 451584,
-                        "clan_tag": "Ex0n",
-                        "clan_name": "Real Exon Esports",
-                        "icon_url": "http://EU.depot.battle.net:1119/63e92b3f75ad41f71bfa8e8fe6dd19ad4b2d88eb87ae282da1a4d51956b4abc3.clfl",
-                        "decal_url": "http://EU.depot.battle.net:1119/63e92b3f75ad41f71bfa8e8fe6dd19ad4b2d88eb87ae282da1a4d51956b4abc3.clfl"
                     }
                 }
             ]
@@ -924,18 +924,18 @@
         },
         {
             "id": 9596870720856522752,
-            "rating": 6405,
-            "wins": 136,
+            "rating": 6407,
+            "wins": 137,
             "losses": 93,
             "ties": 0,
-            "points": 3485,
+            "points": 3489,
             "longest_win_streak": 9,
-            "current_win_streak": 0,
+            "current_win_streak": 1,
             "current_rank": 22,
             "highest_rank": 200,
             "previous_rank": 25,
             "join_time_stamp": 1598644778,
-            "last_played_time_stamp": 1600115503,
+            "last_played_time_stamp": 1600128062,
             "member": [
                 {
                     "legacy_link": {
@@ -949,7 +949,7 @@
                             "race": {
                                 "en_US": "Terran"
                             },
-                            "count": 229
+                            "count": 230
                         }
                     ],
                     "character_link": {
@@ -964,18 +964,18 @@
         },
         {
             "id": 2569005701368119296,
-            "rating": 6381,
-            "wins": 81,
+            "rating": 6397,
+            "wins": 84,
             "losses": 41,
             "ties": 0,
-            "points": 2827,
+            "points": 2841,
             "longest_win_streak": 14,
-            "current_win_streak": 0,
+            "current_win_streak": 3,
             "current_rank": 23,
             "highest_rank": 200,
             "previous_rank": 22,
             "join_time_stamp": 1598558374,
-            "last_played_time_stamp": 1600124640,
+            "last_played_time_stamp": 1600127126,
             "member": [
                 {
                     "legacy_link": {
@@ -989,7 +989,7 @@
                             "race": {
                                 "en_US": "Terran"
                             },
-                            "count": 122
+                            "count": 125
                         }
                     ],
                     "character_link": {
@@ -1262,51 +1262,6 @@
             ]
         },
         {
-            "id": 2597995424946061312,
-            "rating": 6249,
-            "wins": 38,
-            "losses": 24,
-            "ties": 0,
-            "points": 1640,
-            "longest_win_streak": 11,
-            "current_win_streak": 0,
-            "current_rank": 30,
-            "highest_rank": 200,
-            "previous_rank": 26,
-            "join_time_stamp": 1599163180,
-            "last_played_time_stamp": 1600123882,
-            "member": [
-                {
-                    "legacy_link": {
-                        "id": 1654675,
-                        "realm": 1,
-                        "name": "RiSky#732",
-                        "path": "/profile/1654675/1/RiSky"
-                    },
-                    "played_race_count": [
-                        {
-                            "race": {
-                                "en_US": "Zerg"
-                            },
-                            "count": 62
-                        }
-                    ],
-                    "character_link": {
-                        "id": 1654675,
-                        "battle_tag": "RiSky#2172",
-                        "key": {
-                            "href": "https://eu.api.blizzard.com/data/sc2/character/RiSky-2172/1654675?namespace=prod"
-                        }
-                    },
-                    "clan_link": {
-                        "id": 468129,
-                        "clan_tag": "0Team",
-                        "clan_name": "no team sadge"
-                    }
-                }
-            ]
-        },
-        {
             "id": 9947032188954345472,
             "rating": 6242,
             "wins": 10,
@@ -1315,7 +1270,7 @@
             "points": 431,
             "longest_win_streak": 9,
             "current_win_streak": 1,
-            "current_rank": 31,
+            "current_rank": 30,
             "highest_rank": 200,
             "previous_rank": 0,
             "join_time_stamp": 1600113579,
@@ -1349,6 +1304,51 @@
                         "clan_name": "ROOT Gaming",
                         "icon_url": "http://EU.depot.battle.net:1119/5486fa7389f9ae407a16b45df2797af16dbe5a09eb3e8a09b5230a39b19ae822.clfl",
                         "decal_url": "http://EU.depot.battle.net:1119/5486fa7389f9ae407a16b45df2797af16dbe5a09eb3e8a09b5230a39b19ae822.clfl"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2597995424946061312,
+            "rating": 6237,
+            "wins": 38,
+            "losses": 25,
+            "ties": 0,
+            "points": 1640,
+            "longest_win_streak": 11,
+            "current_win_streak": 0,
+            "current_rank": 31,
+            "highest_rank": 200,
+            "previous_rank": 26,
+            "join_time_stamp": 1599163180,
+            "last_played_time_stamp": 1600125564,
+            "member": [
+                {
+                    "legacy_link": {
+                        "id": 1654675,
+                        "realm": 1,
+                        "name": "RiSky#732",
+                        "path": "/profile/1654675/1/RiSky"
+                    },
+                    "played_race_count": [
+                        {
+                            "race": {
+                                "en_US": "Zerg"
+                            },
+                            "count": 63
+                        }
+                    ],
+                    "character_link": {
+                        "id": 1654675,
+                        "battle_tag": "RiSky#2172",
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/sc2/character/RiSky-2172/1654675?namespace=prod"
+                        }
+                    },
+                    "clan_link": {
+                        "id": 468129,
+                        "clan_tag": "0Team",
+                        "clan_name": "no team sadge"
                     }
                 }
             ]
@@ -7011,6 +7011,46 @@
             ]
         },
         {
+            "id": 8839141183063064576,
+            "rating": 5603,
+            "wins": 159,
+            "losses": 134,
+            "ties": 0,
+            "points": 1740,
+            "longest_win_streak": 9,
+            "current_win_streak": 1,
+            "current_rank": 163,
+            "highest_rank": 200,
+            "previous_rank": 0,
+            "join_time_stamp": 1599681572,
+            "last_played_time_stamp": 1600129143,
+            "member": [
+                {
+                    "legacy_link": {
+                        "id": 9063206,
+                        "realm": 1,
+                        "name": "IIIIIIIIIIII#15248",
+                        "path": "/profile/9063206/1/IIIIIIIIIIII"
+                    },
+                    "played_race_count": [
+                        {
+                            "race": {
+                                "en_US": "Terran"
+                            },
+                            "count": 293
+                        }
+                    ],
+                    "character_link": {
+                        "id": 9063206,
+                        "battle_tag": "WildPants#2138509",
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/sc2/character/WildPants-2138509/9063206?namespace=prod"
+                        }
+                    }
+                }
+            ]
+        },
+        {
             "id": 14357495489165787136,
             "rating": 5601,
             "wins": 132,
@@ -7019,7 +7059,7 @@
             "points": 2512,
             "longest_win_streak": 54,
             "current_win_streak": 1,
-            "current_rank": 163,
+            "current_rank": 164,
             "highest_rank": 200,
             "previous_rank": 0,
             "join_time_stamp": 1599595178,
@@ -7066,7 +7106,7 @@
             "points": 2657,
             "longest_win_streak": 10,
             "current_win_streak": 0,
-            "current_rank": 164,
+            "current_rank": 165,
             "highest_rank": 200,
             "previous_rank": 0,
             "join_time_stamp": 1599595178,
@@ -7106,7 +7146,7 @@
             "points": 2135,
             "longest_win_streak": 9,
             "current_win_streak": 2,
-            "current_rank": 165,
+            "current_rank": 166,
             "highest_rank": 200,
             "previous_rank": 0,
             "join_time_stamp": 1599681572,
@@ -7153,7 +7193,7 @@
             "points": 3166,
             "longest_win_streak": 9,
             "current_win_streak": 0,
-            "current_rank": 166,
+            "current_rank": 167,
             "highest_rank": 154,
             "previous_rank": 141,
             "join_time_stamp": 1597262371,
@@ -7187,46 +7227,6 @@
                         "clan_name": "Archangel GamingEU",
                         "icon_url": "http://EU.depot.battle.net:1119/97ef7bec372eb821c32a33cc55ad4f3b025471223c2d340777c7204be1eba27f.clfl",
                         "decal_url": "http://EU.depot.battle.net:1119/97ef7bec372eb821c32a33cc55ad4f3b025471223c2d340777c7204be1eba27f.clfl"
-                    }
-                }
-            ]
-        },
-        {
-            "id": 8839141183063064576,
-            "rating": 5596,
-            "wins": 158,
-            "losses": 134,
-            "ties": 0,
-            "points": 1718,
-            "longest_win_streak": 9,
-            "current_win_streak": 0,
-            "current_rank": 167,
-            "highest_rank": 200,
-            "previous_rank": 0,
-            "join_time_stamp": 1599681572,
-            "last_played_time_stamp": 1600117747,
-            "member": [
-                {
-                    "legacy_link": {
-                        "id": 9063206,
-                        "realm": 1,
-                        "name": "IIIIIIIIIIII#15248",
-                        "path": "/profile/9063206/1/IIIIIIIIIIII"
-                    },
-                    "played_race_count": [
-                        {
-                            "race": {
-                                "en_US": "Terran"
-                            },
-                            "count": 292
-                        }
-                    ],
-                    "character_link": {
-                        "id": 9063206,
-                        "battle_tag": "WildPants#2138509",
-                        "key": {
-                            "href": "https://eu.api.blizzard.com/data/sc2/character/WildPants-2138509/9063206?namespace=prod"
-                        }
                     }
                 }
             ]

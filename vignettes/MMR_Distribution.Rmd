@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 
+NOT_CRAN <- identical(tolower(Sys.getenv("NOT_CRAN")), "true")
+knitr::opts_chunk$set(purl = NOT_CRAN, eval=NOT_CRAN)
 library(httptest)
 start_vignette("vignettes/MMR_Distribution")
 ```
@@ -43,14 +45,12 @@ set_token("YOUR CLIENT ID", "YOUR CLIENT SECRET")
 
 To obtain the MMRs of players in the European Grandmaster league, we will first use the \code{get_league_data} to  obtain the ladder ID of the Grandmaster ladder in the current season (season #44).
 
-```{r}
-region = "eu"
-current_season = 44
-data <- get_league_data(season_id = current_season, 
+```{r eval=NOT_CRAN}
+data <- get_league_data(season_id = 44, 
                         queue_id = 201, 
                         team_type = 0, 
                         league_id = 6, 
-                        host_region = region)
+                        host_region = "eu")
 ```
 
 The queue_id argument "201" refers to the fact that we are looking for 1v1 in the current expansion (Legacy of the Void), team_type means that the teams are arranged beforehand (not particularly useful since this only applies to team games), and a league_id refers to the league of Grandmaster. To see other choices for these arguments, see the help documentation in \code{?get_League_data}.
@@ -64,8 +64,13 @@ ladder_id
 
 Now that we have a ladder ID, we can supply it as an argument to the \code{get_ladder_data} function to discover the MMRs of players within the league. The host_region argument must be set to "eu"" since that is the region with which we are currently concerned. 
 
+```{r, eval=NOT_CRAN}
+ladder_data <- get_ladder_data(ladder_id = ladder_id, host_region = "eu")
+```
+
+Then, we can extract the MMR from ladder_data. 
+
 ```{r Overall}
-ladder_data <- get_ladder_data(ladder_id = ladder_id, host_region = region)
 mmr <- ladder_data$team$rating
 head(mmr)
 ```
