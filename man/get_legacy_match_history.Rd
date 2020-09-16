@@ -7,7 +7,7 @@
 get_legacy_match_history(region_id, realm_id, profile_id, host_region = "us")
 }
 \arguments{
-\item{region_id}{A numeric argument indiciating the region of the profile.
+\item{region_id}{A numeric argument indicating the region of the profile.
     \itemize{
         \item 1 = US Region
         \item 2 = EU Region
@@ -15,7 +15,7 @@ get_legacy_match_history(region_id, realm_id, profile_id, host_region = "us")
         \item 5 = CN Region
 }}
 
-\item{realm_id}{A numeric argument indiciating the realm of the profile. A realm is a subset
+\item{realm_id}{A numeric argument indicating the realm of the profile. A realm is a subset
 of the region.
  \itemize{
      \item{US Region}

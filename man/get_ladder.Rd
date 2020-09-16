@@ -7,7 +7,7 @@
 get_ladder(region_id, realm_id, profile_id, ladder_id, host_region = "us")
 }
 \arguments{
-\item{region_id}{A numeric argument indiciating the region of the profile.
+\item{region_id}{A numeric argument indicating the region of the profile.
     \itemize{
         \item 1 = US Region
         \item 2 = EU Region
@@ -15,7 +15,7 @@ get_ladder(region_id, realm_id, profile_id, ladder_id, host_region = "us")
         \item 5 = CN Region
 }}
 
-\item{realm_id}{A numeric argument indiciating the realm of the profile. A realm is a subset
+\item{realm_id}{A numeric argument indicating the realm of the profile. A realm is a subset
 of the region.
  \itemize{
      \item{US Region}
@@ -37,7 +37,7 @@ of the region.
 
 \item{profile_id}{A unique, numeric identifier for an individual's profile.}
 
-\item{ladder_id}{A unique identifier for a particular ladder. With the exception of gradmaster, leagues
+\item{ladder_id}{A unique identifier for a particular ladder. With the exception of Grandmaster, leagues
 (bronze, silver, etc.), are separated into tiers (1,2,3) which are further separated into divisions.
 These divisions, or ladders, each have a unique identifier.}
 

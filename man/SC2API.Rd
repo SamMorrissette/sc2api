@@ -10,7 +10,7 @@ accounts, profiles, seasons and ladders.
 }
 \details{
 Before using, it is recommended to view the README on
-\href{https://github.com/SamMorrissette/sc2api#readme}{Github}
+\href{https://github.com/SamMorrissette/sc2api#readme}{GitHub}
 
 Further documentation can be found in Blizzard's
 \href{https://develop.battle.net/documentation/starcraft-2}{Starcraft II API documentation}.

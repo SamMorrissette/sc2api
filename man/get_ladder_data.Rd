@@ -7,7 +7,7 @@
 get_ladder_data(ladder_id, host_region = "us")
 }
 \arguments{
-\item{ladder_id}{A unique identifier for a particular ladder. With the exception of gradmaster, leagues
+\item{ladder_id}{A unique identifier for a particular ladder. With the exception of grandmaster, leagues
 (bronze, silver, etc.), are separated into tiers (1,2,3) which are further separated into divisions.
 These divisions, or ladders, each have a unique identifier.}
 

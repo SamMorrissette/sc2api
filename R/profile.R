@@ -5,7 +5,7 @@
 #' in a given region.
 #'
 #' @family profile API calls
-#' @param region_id A numeric argument indiciating the region of the profile.
+#' @param region_id A numeric argument indicating the region of the profile.
 #'     \itemize{
 #'         \item 1 = US Region
 #'         \item 2 = EU Region
@@ -50,7 +50,7 @@ get_static <- function(region_id, host_region = "us") {
 #'
 #' @family profile API calls
 #' @inheritParams get_static
-#' @param realm_id A numeric argument indiciating the realm of the profile. A realm is a subset
+#' @param realm_id A numeric argument indicating the realm of the profile. A realm is a subset
 #'     of the region.
 #'      \itemize{
 #'          \item{US Region}
@@ -155,7 +155,7 @@ get_ladder_summary <- function(region_id, realm_id, profile_id, host_region = "u
 #' @family profile API calls
 #'
 #' @inheritParams get_metadata
-#' @param ladder_id A unique identifier for a particular ladder. With the exception of gradmaster, leagues
+#' @param ladder_id A unique identifier for a particular ladder. With the exception of Grandmaster, leagues
 #' (bronze, silver, etc.), are separated into tiers (1,2,3) which are further separated into divisions.
 #' These divisions, or ladders, each have a unique identifier.
 #' @references \itemize{

@@ -7,7 +7,7 @@
 get_season(region_id, host_region = "us")
 }
 \arguments{
-\item{region_id}{A numeric argument indiciating the region of the profile.
+\item{region_id}{A numeric argument indicating the region of the profile.
     \itemize{
         \item 1 = US Region
         \item 2 = EU Region

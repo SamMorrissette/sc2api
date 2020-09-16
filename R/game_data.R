@@ -3,7 +3,7 @@
 #' Provides data of players in a particular ladder. This includes MMR, points,
 #' win/loss record, time of joining, time of a player's last game, and more.
 #' @family game data API calls
-#' @param ladder_id A unique identifier for a particular ladder. With the exception of gradmaster, leagues
+#' @param ladder_id A unique identifier for a particular ladder. With the exception of grandmaster, leagues
 #' (bronze, silver, etc.), are separated into tiers (1,2,3) which are further separated into divisions.
 #' These divisions, or ladders, each have a unique identifier.
 #' @param host_region The host region that the API call will be sent to. For \code{get_ladder_data}, the host
