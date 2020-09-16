@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
-The goal of SC2API is to build a simple and easy-to-use API wrapper for the Blizzard Starcraft II API in the R programming language.
+The goal of SC2API is to build a simple and easy-to-use API wrapper for Blizzard Starcraft II API in the R programming language.
 
 ## Installation
 You can install the development version of SC2API from [GitHub](https://github.com/) with:

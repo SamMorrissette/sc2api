@@ -10,7 +10,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 <!-- badges: end -->
 
 The goal of SC2API is to build a simple and easy-to-use API wrapper for
-the Blizzard Starcraft II API in the R programming language.
+Blizzard Starcraft II API in the R programming language.
 
 ## Installation
 
@@ -45,5 +45,5 @@ data <- get_gm_leaderboard(1) # An argument of "1" corresponds to the North Amer
 top10 <- data[1:10,] # Extract the top 10 players
 playerMMR <- top10$mmr # Extract the "mmr" vector from each player. 
 print(playerMMR)
-#>  [1] 6447 6350 6300 6279 6252 6246 6228 6184 6147 6086
+#>  [1] 6511 6368 6290 6252 6246 6228 6186 6184 6113 6086
 ```
