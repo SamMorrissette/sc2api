@@ -19,8 +19,12 @@ knitr::opts_chunk$set(
 )
 knitr::opts_chunk$set(fig.width=10, fig.height=8,fig.align = 'center') 
 
+if (!requireNamespace("httptest", quietly = TRUE)) {
+    stop("Package \"pkg\" needed for this vignette to work. Please install it.",
+      call. = FALSE)
+}
 library(httptest)
-start_vignette("MMR_Distribution")
+httptest::start_vignette("MMR_Distribution")
 ```
 
 The SC2API package is an R wrapper for Blizzard's [Starcraft II API](https://develop.battle.net/documentation/starcraft-2). As an introduction to the package, it is an interesting and useful exercise to visualize the distribution of Matchmaking Rating (MMR) of the top Starcraft II players. For this exercise, we will limit our scope to the European region and investigate its Grandmaster league (i.e. the top 200 players in the region, although there may be less than 200 at any given time depending on player activity). 
@@ -149,6 +153,6 @@ ggplot(df,aes(x = mmr)) +
 ```
 
 ```{r, include=FALSE}
-end_vignette()
+httptest::end_vignette()
 ```
 
