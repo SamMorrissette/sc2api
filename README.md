@@ -7,6 +7,8 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Travis build
+status](https://travis-ci.com/SamMorrissette/sc2api.svg?branch=master)](https://travis-ci.com/SamMorrissette/sc2api)
 <!-- badges: end -->
 
 The goal of SC2API is to build a simple and easy-to-use API wrapper for
@@ -53,5 +55,5 @@ data <- get_gm_leaderboard(1) # An argument of "1" corresponds to the North Amer
 top10 <- data[1:10,] # Extract the top 10 players
 playerMMR <- top10$mmr # Extract the "mmr" vector from each player. 
 print(playerMMR)
-#>  [1] 6511 6368 6252 6246 6228 6208 6186 6184 6163 6113
+#>  [1] 6511 6368 6252 6246 6228 6208 6186 6184 6113 6106
 ```
