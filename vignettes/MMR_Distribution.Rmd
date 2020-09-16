@@ -5,7 +5,7 @@ description: >
   in Grandmasters league for the European region.
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{MMR Distribution in Current Season}
+  %\VignetteIndexEntry{MMR Distribution in Starcraft II}
   %\VignetteEncoding{UTF-8}
   %\VignetteEngine{knitr::rmarkdown}
 editor_options: 
@@ -71,17 +71,40 @@ Now that we have a ladder ID, we can supply it as an argument to the ```get_ladd
 ladder_data <- get_ladder_data(ladder_id = ladder_id, host_region = "eu")
 ```
 
-Then, we can extract the MMR from ladder_data. 
+Then, we can extract players' MMR from ladder_data. 
 
 ```{r Overall}
 mmr <- ladder_data$team$rating
 head(mmr)
 ```
 
+# Grandmaster MMR in the Current Season
+
+To retrieve the MMRs of players in past seasons, the above functions are necessary. However, since the grandmaster league is, in some sense, special, there is an alternative function we can use to retrieve the MMRs of players currently in grandmaster (that is, in the current season):
+
+```{r}
+ladder_data_current <- get_gm_leaderboard(2, host_region = "us")
+mmrCurrent <- ladder_data_current$mmr
+head(mmrCurrent)
+```
+
+Notice that for this function, it doesn't matter which host region we use, as long as the region_id is set to the region from which we would like to retrieve data. That is, 
+
+```{r}
+ladder_data_current2 <- get_gm_leaderboard(2, host_region = "kr")
+mmrCurrent2 <- ladder_data_current$mmr
+
+identical(mmrCurrent,mmrCurrent2)
+```
+
+For this reason, it is important to refer to the documentation. If the region_id argument is not available, it is likely that the host_region affects the data retrieved. 
+
+We will continue the rest of the vignette using the MMRs of players from the last season.
+
 # Visualization
 
 ## Overall distribution
-Now that we have the necessary data, we can plot the distribution as a histogram using the ggplot2 package.
+Since we now have the MMRs of players from season 43, we can plot the distribution as a histogram using the ggplot2 package.
 
 ```{r}
 ggplot() +
@@ -124,11 +147,6 @@ ggplot(df,aes(x = mmr)) +
   scale_color_manual(values = c('Orange','Blue','Red')) +
   theme_light()
 ```
-
-
-## Conclusion 
-
-This was a brief introduction to the SC2API package, but I hope that others are able to utilize the package in interesting ways. 
 
 ```{r, include=FALSE}
 end_vignette()

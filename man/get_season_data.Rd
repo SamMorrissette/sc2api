@@ -30,3 +30,15 @@ as.POSIXct(data$start_timestamp, origin = "1970-01-01")
 as.POSIXct(data$end_timestamp, origin = "1970-01-01")
 }
 }
+\references{
+\itemize{
+   \item \href{https://develop.battle.net/documentation/starcraft-2/community-apis}{Blizzard Community API Documentation}
+   \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
+   }
+}
+\seealso{
+Other game data API calls: 
+\code{\link{get_ladder_data}()},
+\code{\link{get_league_data}()}
+}
+\concept{game data API calls}

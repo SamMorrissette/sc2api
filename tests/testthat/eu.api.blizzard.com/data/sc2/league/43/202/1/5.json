@@ -1,0 +1,196 @@
+{
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/data/sc2/league/43/202/1/5?namespace=prod"
+        }
+    },
+    "key": {
+        "league_id": 5,
+        "season_id": 43,
+        "queue_id": 202,
+        "team_type": 1
+    },
+    "tier": [
+        {
+            "id": 0,
+            "min_rating": 4291,
+            "max_rating": 4476,
+            "division": [
+                {
+                    "id": 21,
+                    "ladder_id": 227449,
+                    "member_count": 18
+                },
+                {
+                    "id": 17,
+                    "ladder_id": 226189,
+                    "member_count": 98
+                },
+                {
+                    "id": 12,
+                    "ladder_id": 224894,
+                    "member_count": 100
+                },
+                {
+                    "id": 15,
+                    "ladder_id": 225520,
+                    "member_count": 99
+                },
+                {
+                    "id": 19,
+                    "ladder_id": 226743,
+                    "member_count": 97
+                },
+                {
+                    "id": 2,
+                    "ladder_id": 224249,
+                    "member_count": 100
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "min_rating": 4105,
+            "max_rating": 4291,
+            "division": [
+                {
+                    "id": 18,
+                    "ladder_id": 226443,
+                    "member_count": 96
+                },
+                {
+                    "id": 13,
+                    "ladder_id": 224975,
+                    "member_count": 100
+                },
+                {
+                    "id": 20,
+                    "ladder_id": 227396,
+                    "member_count": 40
+                },
+                {
+                    "id": 16,
+                    "ladder_id": 225647,
+                    "member_count": 98
+                },
+                {
+                    "id": 3,
+                    "ladder_id": 224261,
+                    "member_count": 97
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "min_rating": 3920,
+            "max_rating": 4105,
+            "division": [
+                {
+                    "id": 5,
+                    "ladder_id": 224364,
+                    "member_count": 100
+                },
+                {
+                    "id": 22,
+                    "ladder_id": 227496,
+                    "member_count": 100
+                },
+                {
+                    "id": 1,
+                    "ladder_id": 224182,
+                    "member_count": 100
+                },
+                {
+                    "id": 30,
+                    "ladder_id": 227587,
+                    "member_count": 100
+                },
+                {
+                    "id": 9,
+                    "ladder_id": 224558,
+                    "member_count": 100
+                },
+                {
+                    "id": 26,
+                    "ladder_id": 227543,
+                    "member_count": 100
+                },
+                {
+                    "id": 4,
+                    "ladder_id": 224304,
+                    "member_count": 100
+                },
+                {
+                    "id": 29,
+                    "ladder_id": 227581,
+                    "member_count": 100
+                },
+                {
+                    "id": 25,
+                    "ladder_id": 227530,
+                    "member_count": 100
+                },
+                {
+                    "id": 8,
+                    "ladder_id": 224521,
+                    "member_count": 100
+                },
+                {
+                    "id": 7,
+                    "ladder_id": 224471,
+                    "member_count": 100
+                },
+                {
+                    "id": 28,
+                    "ladder_id": 227566,
+                    "member_count": 100
+                },
+                {
+                    "id": 24,
+                    "ladder_id": 227519,
+                    "member_count": 100
+                },
+                {
+                    "id": 11,
+                    "ladder_id": 224625,
+                    "member_count": 100
+                },
+                {
+                    "id": 23,
+                    "ladder_id": 227509,
+                    "member_count": 100
+                },
+                {
+                    "id": 6,
+                    "ladder_id": 224409,
+                    "member_count": 100
+                },
+                {
+                    "id": 32,
+                    "ladder_id": 227606,
+                    "member_count": 5
+                },
+                {
+                    "id": 31,
+                    "ladder_id": 227596,
+                    "member_count": 100
+                },
+                {
+                    "id": 14,
+                    "ladder_id": 225012,
+                    "member_count": 100
+                },
+                {
+                    "id": 27,
+                    "ladder_id": 227555,
+                    "member_count": 100
+                },
+                {
+                    "id": 10,
+                    "ladder_id": 224592,
+                    "member_count": 100
+                }
+            ]
+        }
+    ]
+}

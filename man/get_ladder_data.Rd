@@ -39,8 +39,13 @@ tags <- sapply(data$team$member, function(x) x$character_link$battle_tag)
 }
 \references{
 \itemize{
-   \item \href{https://develop.battle.net/documentation/starcraft-2/community-apis}{Blizzard Community API Documentation}
+   \item \href{https://develop.battle.net/documentation/starcraft-2/community-apis}{Blizzard Community API       #'          Documentation}
    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
    }
 }
-\concept{data API calls}
+\seealso{
+Other game data API calls: 
+\code{\link{get_league_data}()},
+\code{\link{get_season_data}()}
+}
+\concept{game data API calls}

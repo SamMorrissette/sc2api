@@ -2,7 +2,7 @@
 #'
 #' Provides data of players in a particular ladder. This includes MMR, points,
 #' win/loss record, time of joining, time of a player's last game, and more.
-#' @family data API calls
+#' @family game data API calls
 #' @param ladder_id A unique identifier for a particular ladder. With the exception of gradmaster, leagues
 #' (bronze, silver, etc.), are separated into tiers (1,2,3) which are further separated into divisions.
 #' These divisions, or ladders, each have a unique identifier.
@@ -11,7 +11,7 @@
 #' information on regionality, refer to
 #' \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}.
 #' @references \itemize{
-#'    \item \href{https://develop.battle.net/documentation/starcraft-2/community-apis}{Blizzard Community API Documentation}
+#'    \item \href{https://develop.battle.net/documentation/starcraft-2/community-apis}{Blizzard Community API       #'          Documentation}
 #'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
 #'    }
 #' @note For \code{get_ladder_data}, the host region MUST be the region that the ladder is a part of.
@@ -43,6 +43,8 @@ get_ladder_data <- function(ladder_id, host_region = "us") {
 #' 1 tier) and further divided into a number of divisions depending on how many players are in a given league.
 #' League data contains the number of divisions, the unique ladder ID of each division and the
 #' total player count contained within each division.
+#'
+#' @family game data API calls
 #' @param season_id A numeric argument indicating a particular ladder season. Currently, league data
 #'     is only available for season 28 and higher (i.e. data prior to this season is inaccessible).
 #' @param queue_id
@@ -80,6 +82,10 @@ get_ladder_data <- function(ladder_id, host_region = "us") {
 #' region affects the data you will receive (i.e. different regions will result in different data).
 #' Must be one of "us", "eu", "kr", "tw", "cn". For more information on regionality, refer to
 #' \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}.
+#' @references \itemize{
+#'    \item \href{https://develop.battle.net/documentation/starcraft-2/community-apis}{Blizzard Community API Documentation}
+#'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
+#'    }
 #' @note League data is only available for season 28 and higher.
 #' @examples \dontrun{
 #' # Get full league data for Season 30, LotV 1v1, arranged teams,
@@ -89,10 +95,6 @@ get_ladder_data <- function(ladder_id, host_region = "us") {
 #'                     team_type = 0,
 #'                     league_id = 5,
 #'                     host_region = "us")
-#'
-#' # Get all divisions and their associated player counts
-#' player_counts <- data$tier$division[[3]]$member_count
-#' total_count <- sum(player_counts)
 #' }
 #' @export
 #'
@@ -111,6 +113,11 @@ get_league_data <- function(season_id, queue_id, team_type, league_id, host_regi
     stop("Invalid league_id. Please see ?get_league_data for argument choices.")
   }
 
+  if ((queue_id == 1 | queue_id == 101 | queue_id == 201) & team_type != 0) {
+    stop("queue_id corresponding to 1v1 game modes must have team_type set to 0")
+  }
+
+
   endpoint <- sprintf('data/sc2/league/%s/%s/%s/%s', season_id, queue_id, team_type, league_id)
   make_request(endpoint, host_region)
 }
@@ -120,11 +127,16 @@ get_league_data <- function(season_id, queue_id, team_type, league_id, host_regi
 #' Season Data
 #'
 #' Provides start and ending times for a given season.
+#' @family game data API calls
 #' @inheritParams get_league_data
 #' @param host_region The host region that the API call will be sent to. For \code{get_season_data}, the host
 #' region affects the data you will receive (i.e. different regions will result in different data).
 #' Must be one of "us", "eu", "kr", "tw", "cn". For more information on regionality, refer to
 #' \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}.
+#' @references \itemize{
+#'    \item \href{https://develop.battle.net/documentation/starcraft-2/community-apis}{Blizzard Community API Documentation}
+#'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
+#'    }
 #' @note Season data is only available for season 28 and higher.
 #' @examples \dontrun{
 #' # Get season start and end times for season 35 in the European region.

@@ -65,3 +65,10 @@ valid_token("TEST TOKEN")
 unset_token()
 }
 }
+\references{
+\itemize{
+   \item \href{https://develop.battle.net/}{Blizzard Developer Portal}
+   \item \href{https://develop.battle.net/documentation/guides/using-oauth}{Using OAuth}
+   \item \href{https://develop.battle.net/documentation/guides/getting-started}{Getting Started}
+   }
+}

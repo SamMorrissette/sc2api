@@ -1,6 +1,6 @@
 ^SC2API\.Rproj$
 ^\.Rproj\.user$
-^data-raw$
 ^LICENSE\.md$
 ^CODE_OF_CONDUCT\.md$
 ^README\.Rmd$
+^cran-comments\.md$

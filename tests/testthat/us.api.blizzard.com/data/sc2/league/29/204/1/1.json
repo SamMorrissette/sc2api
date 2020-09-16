@@ -1,0 +1,156 @@
+{
+    "_links": {
+        "self": {
+            "href": "https://us.api.blizzard.com/data/sc2/league/29/204/1/1?namespace=prod"
+        }
+    },
+    "key": {
+        "league_id": 1,
+        "season_id": 29,
+        "queue_id": 204,
+        "team_type": 1
+    },
+    "tier": [
+        {
+            "id": 0,
+            "min_rating": 3187,
+            "max_rating": 3320,
+            "division": [
+                {
+                    "id": 7,
+                    "ladder_id": 199722,
+                    "member_count": 100
+                },
+                {
+                    "id": 22,
+                    "ladder_id": 200601,
+                    "member_count": 53
+                },
+                {
+                    "id": 1,
+                    "ladder_id": 199306,
+                    "member_count": 100
+                },
+                {
+                    "id": 16,
+                    "ladder_id": 200175,
+                    "member_count": 100
+                },
+                {
+                    "id": 13,
+                    "ladder_id": 199974,
+                    "member_count": 100
+                },
+                {
+                    "id": 15,
+                    "ladder_id": 200078,
+                    "member_count": 100
+                },
+                {
+                    "id": 9,
+                    "ladder_id": 199804,
+                    "member_count": 100
+                },
+                {
+                    "id": 21,
+                    "ladder_id": 200498,
+                    "member_count": 99
+                },
+                {
+                    "id": 4,
+                    "ladder_id": 199622,
+                    "member_count": 100
+                },
+                {
+                    "id": 19,
+                    "ladder_id": 200349,
+                    "member_count": 100
+                },
+                {
+                    "id": 12,
+                    "ladder_id": 199888,
+                    "member_count": 100
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "min_rating": 3053,
+            "max_rating": 3187,
+            "division": [
+                {
+                    "id": 5,
+                    "ladder_id": 199637,
+                    "member_count": 100
+                },
+                {
+                    "id": 20,
+                    "ladder_id": 200435,
+                    "member_count": 100
+                },
+                {
+                    "id": 3,
+                    "ladder_id": 199368,
+                    "member_count": 100
+                },
+                {
+                    "id": 18,
+                    "ladder_id": 200297,
+                    "member_count": 100
+                },
+                {
+                    "id": 24,
+                    "ladder_id": 200623,
+                    "member_count": 9
+                },
+                {
+                    "id": 11,
+                    "ladder_id": 199876,
+                    "member_count": 100
+                },
+                {
+                    "id": 14,
+                    "ladder_id": 200011,
+                    "member_count": 99
+                },
+                {
+                    "id": 8,
+                    "ladder_id": 199769,
+                    "member_count": 100
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "min_rating": 2920,
+            "max_rating": 3053,
+            "division": [
+                {
+                    "id": 23,
+                    "ladder_id": 200611,
+                    "member_count": 13
+                },
+                {
+                    "id": 6,
+                    "ladder_id": 199682,
+                    "member_count": 100
+                },
+                {
+                    "id": 17,
+                    "ladder_id": 200180,
+                    "member_count": 100
+                },
+                {
+                    "id": 2,
+                    "ladder_id": 199320,
+                    "member_count": 100
+                },
+                {
+                    "id": 10,
+                    "ladder_id": 199857,
+                    "member_count": 99
+                }
+            ]
+        }
+    ]
+}

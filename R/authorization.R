@@ -47,6 +47,11 @@ get_token <- function(client_id, client_secret) {
 #'     \href{https://develop.battle.net/}{Blizzard Developer Portal}. For more information on
 #'     creating a client, visit
 #'     \href{https://develop.battle.net/documentation/guides/getting-started}{Getting Started}.
+#' @references \itemize{
+#'    \item \href{https://develop.battle.net/}{Blizzard Developer Portal}
+#'    \item \href{https://develop.battle.net/documentation/guides/using-oauth}{Using OAuth}
+#'    \item \href{https://develop.battle.net/documentation/guides/getting-started}{Getting Started}
+#'    }
 #' @rdname authorization
 #' @examples \dontrun{
 #' #Get and set a token as an environment variable
