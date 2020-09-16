@@ -28,11 +28,18 @@ You can install the development version of SC2API from [GitHub](https://github.c
 # install.packages("devtools")
 devtools::install_github("SamMorrissette/sc2api")
 ```
+
+Note that there is also a vignette that comes with the package that can be installed using: 
+
+``` r
+# install.packages("devtools")
+devtools::install_github("SamMorrissette/sc2api", build_vignettes = TRUE, dependencies = TRUE)
+```
 ## Example Usage
 
 This is a basic example to obtain the MMR (match-maker rating) of the current top 10 players in the North America Grandmaster leaderboard.
 
-First, you must set your own token in the R environment by supplying your own client ID and client secret. For more information on how to obtain these, visit [Getting Started](https://https://develop.battle.net/documentation/guides/getting-started).
+First, you must set your own token in the R environment by supplying your own client ID and client secret. For more information on how to obtain these, visit [Getting Started](https://develop.battle.net/documentation/guides/getting-started).
 
 ```{r Load Library}
 library(SC2API)
