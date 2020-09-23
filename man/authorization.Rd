@@ -53,17 +53,14 @@ set_token(client_id = "YOUR CLIENT ID", client_secret = "YOUR CLIENT SECRET")
 #Set an access token that you have already retrieved as an environment variable
 set_token(access_token = "YOUR TOKEN")
 }
-\dontrun{
+\donttest{
 # Ensure that a valid token is currently set as an environment variable
 validate_token()
-
 # Check if a token is valid
-valid_token("TEST TOKEN")
+validate_token("TEST TOKEN")
 }
-\dontrun{
 # Remove token from environment variable
 unset_token()
-}
 }
 \references{
 \itemize{

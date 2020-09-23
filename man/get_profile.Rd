@@ -47,9 +47,9 @@ Provides summary data for an individual's profile such as campaign completion, c
 ladder finishes, earned achievements, and more.
 }
 \examples{
-\dontrun{
+\donttest{
 # Request profile summary of a particular profile in the U.S. region and U.S. realm.
-get_profile(region_id = 1, realm_id = 1, profile_id = 4716773)
+try(get_profile(region_id = 1, realm_id = 1, profile_id = 4716773))
 }
 }
 \references{

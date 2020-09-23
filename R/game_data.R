@@ -15,17 +15,19 @@
 #'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
 #'    }
 #' @note For \code{get_ladder_data}, the host region MUST be the region that the ladder is a part of.
-#' @examples \dontrun{
+#' @examples \donttest{
 #' ### Obtain battle tags and MMR of players in a particular ladder.
 #'
 #' #Get full ladder data
-#' data <- get_ladder_data(ladder_id = 289444, host_region = "us")
+#' try({
+#'     data <- get_ladder_data(ladder_id = 289444, host_region = "us")
 #'
-#' # Player ratings
-#' ratings <- data$team$rating
+#'     # Player ratings
+#'     ratings <- data$team$rating
 #'
-#' # Get battle tags using list indexing with sapply
-#' tags <- sapply(data$team$member, function(x) x$character_link$battle_tag)
+#'     # Get battle tags using list indexing with sapply
+#'     tags <- sapply(data$team$member, function(x) x$character_link$battle_tag)
+#' })
 #' }
 #' @export
 #'
@@ -87,14 +89,16 @@ get_ladder_data <- function(ladder_id, host_region = "us") {
 #'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
 #'    }
 #' @note League data is only available for season 28 and higher.
-#' @examples \dontrun{
+#' @examples \donttest{
 #' # Get full league data for Season 30, LotV 1v1, arranged teams,
 #' # Masters league, U.S. region.
-#' data <- get_league_data(season_id = 30,
-#'                     queue_id = 201,
-#'                     team_type = 0,
-#'                     league_id = 5,
-#'                     host_region = "us")
+#' try({
+#'     data <- get_league_data(season_id = 30,
+#'                             queue_id = 201,
+#'                             team_type = 0,
+#'                             league_id = 5,
+#'                             host_region = "us")
+#' })
 #' }
 #' @export
 #'
@@ -138,12 +142,13 @@ get_league_data <- function(season_id, queue_id, team_type, league_id, host_regi
 #'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
 #'    }
 #' @note Season data is only available for season 28 and higher.
-#' @examples \dontrun{
+#' @examples \donttest{
 #' # Get season start and end times for season 35 in the European region.
-#'
-#' data <- get_season_data(season_id = 35, host_region = "eu")
-#' as.POSIXct(data$start_timestamp, origin = "1970-01-01")
-#' as.POSIXct(data$end_timestamp, origin = "1970-01-01")
+#' try({
+#'     data <- get_season_data(season_id = 35, host_region = "eu")
+#'     as.POSIXct(data$start_timestamp, origin = "1970-01-01")
+#'     as.POSIXct(data$end_timestamp, origin = "1970-01-01")
+#' })
 #' }
 #' @export
 #'

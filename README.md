@@ -47,7 +47,7 @@ library(SC2API)
 ```
 
 ``` r
-set_token(get_token("YOUR CLIENT ID", "YOUR CLIENT SECRET"))
+set_token("YOUR CLIENT ID", "YOUR CLIENT SECRET")
 ```
 
 ``` r
@@ -55,5 +55,5 @@ data <- get_gm_leaderboard(1) # An argument of "1" corresponds to the North Amer
 top10 <- data[1:10,] # Extract the top 10 players
 playerMMR <- top10$mmr # Extract the "mmr" vector from each player. 
 print(playerMMR)
-#>  [1] 6511 6368 6252 6246 6228 6208 6186 6184 6113 6106
+#>  [1] 6609 6425 6338 6310 6293 6284 6228 6208 6157 6135
 ```

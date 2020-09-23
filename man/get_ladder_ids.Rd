@@ -56,14 +56,16 @@ Provides ladder ID's for all divisions in a league's tiers.
 Data is only available for season 28 and higher.
 }
 \examples{
-\dontrun{
+\donttest{
 # Get all ladder ID's for Season 35, LotV 2v2, randomly gathered teams,
 # Bronze league, Korean region.
-data <- get_ladder_ids(season_id = 35,
-                       queue_id = 202,
-                       team_type = 1,
-                       league_id = 0,
-                       host_region = "kr")
+try({
+    data <- get_ladder_ids(season_id = 35,
+                           queue_id = 202,
+                           team_type = 1,
+                           league_id = 0,
+                           host_region = "kr")
+})
 }
 }
 \references{

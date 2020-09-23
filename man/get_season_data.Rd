@@ -22,12 +22,13 @@ Provides start and ending times for a given season.
 Season data is only available for season 28 and higher.
 }
 \examples{
-\dontrun{
+\donttest{
 # Get season start and end times for season 35 in the European region.
-
-data <- get_season_data(season_id = 35, host_region = "eu")
-as.POSIXct(data$start_timestamp, origin = "1970-01-01")
-as.POSIXct(data$end_timestamp, origin = "1970-01-01")
+try({
+    data <- get_season_data(season_id = 35, host_region = "eu")
+    as.POSIXct(data$start_timestamp, origin = "1970-01-01")
+    as.POSIXct(data$end_timestamp, origin = "1970-01-01")
+})
 }
 }
 \references{

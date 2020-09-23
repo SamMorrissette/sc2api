@@ -26,14 +26,14 @@ Provides static information (achievements, categories, criteria, and rewards)
 in a given region.
 }
 \examples{
-\dontrun{
+\donttest{
 # Request static data of profiles in the EU region. Request is sent through
 # the U.S. host region.
-get_static(region_id = 2, host_region = "us")
+try(get_static(region_id = 2, host_region = "us"))
 
 # Request static data of profiles in the China region. The request must be
 # sent to the China gateway.
-get_static(region_id = 5, host_region = "cn")
+try(get_static(region_id = 5, host_region = "cn"))
 }
 
 }

@@ -47,7 +47,7 @@ library(SC2API)
 ```
 
 ```{r eval=FALSE}
-set_token(get_token("YOUR CLIENT ID", "YOUR CLIENT SECRET"))
+set_token("YOUR CLIENT ID", "YOUR CLIENT SECRET")
 ```
 
 ```{r}

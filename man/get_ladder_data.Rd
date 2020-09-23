@@ -24,17 +24,19 @@ win/loss record, time of joining, time of a player's last game, and more.
 For \code{get_ladder_data}, the host region MUST be the region that the ladder is a part of.
 }
 \examples{
-\dontrun{
+\donttest{
 ### Obtain battle tags and MMR of players in a particular ladder.
 
 #Get full ladder data
-data <- get_ladder_data(ladder_id = 289444, host_region = "us")
+try({
+    data <- get_ladder_data(ladder_id = 289444, host_region = "us")
 
-# Player ratings
-ratings <- data$team$rating
+    # Player ratings
+    ratings <- data$team$rating
 
-# Get battle tags using list indexing with sapply
-tags <- sapply(data$team$member, function(x) x$character_link$battle_tag)
+    # Get battle tags using list indexing with sapply
+    tags <- sapply(data$team$member, function(x) x$character_link$battle_tag)
+})
 }
 }
 \references{

@@ -49,10 +49,12 @@ Provides information about a profile's recent match history (last 25 matches, wi
 Although this is a legacy API call, there is no other call available to obtain a profile's match history.
 }
 \examples{
-\dontrun{
+\donttest{
 # Obtain recent 1v1 results for a profile in the U.S. region
-matches <- get_legacy_match_history(region_id = 1, realm_id = 1, profile_id = 4716773)
-matches[matches$type=='1v1',"decision"]
+try({
+    matches <- get_legacy_match_history(region_id = 1, realm_id = 1, profile_id = 4716773)
+    matches[matches$type=='1v1',"decision"]
+})
 }
 }
 \references{

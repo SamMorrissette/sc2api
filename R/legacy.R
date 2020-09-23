@@ -59,10 +59,12 @@ get_legacy_ladders <- function(region_id, realm_id, profile_id, host_region = "u
 #'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
 #'    }
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # Obtain recent 1v1 results for a profile in the U.S. region
-#' matches <- get_legacy_match_history(region_id = 1, realm_id = 1, profile_id = 4716773)
-#' matches[matches$type=='1v1',"decision"]
+#' try({
+#'     matches <- get_legacy_match_history(region_id = 1, realm_id = 1, profile_id = 4716773)
+#'     matches[matches$type=='1v1',"decision"]
+#' })
 #' }
 #' @note Although this is a legacy API call, there is no other call available to obtain a profile's match history.
 #' @export

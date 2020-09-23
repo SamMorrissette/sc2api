@@ -56,14 +56,16 @@ total player count contained within each division.
 League data is only available for season 28 and higher.
 }
 \examples{
-\dontrun{
+\donttest{
 # Get full league data for Season 30, LotV 1v1, arranged teams,
 # Masters league, U.S. region.
-data <- get_league_data(season_id = 30,
-                    queue_id = 201,
-                    team_type = 0,
-                    league_id = 5,
-                    host_region = "us")
+try({
+    data <- get_league_data(season_id = 30,
+                            queue_id = 201,
+                            team_type = 0,
+                            league_id = 5,
+                            host_region = "us")
+})
 }
 }
 \references{

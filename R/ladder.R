@@ -11,9 +11,9 @@
 #'    \item \href{https://starcraft2.com/en-us/ladder/grandmaster/1}{Grandmaster League}
 #'    }
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # Obtain GM leaderboard for the Korea region
-#' get_gm_leaderboard(region_id = 3)
+#' try(get_gm_leaderboard(region_id = 3))
 #' }
 #' @note This API call is currently not supported for the China region (region_id = 5).
 #'
@@ -53,9 +53,9 @@ get_gm_leaderboard <- function(region_id, host_region = "us") {
 #'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
 #'    }
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # Obtain current season information for the European region
-#' get_season(region_id = 2)
+#' try(get_season(region_id = 2))
 #' }
 #' @inheritParams get_metadata
 #' @export

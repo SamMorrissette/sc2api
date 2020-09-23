@@ -49,9 +49,9 @@ Get the time of the last played match in a player's match history.
 Data is only available for season 28 and higher.
 }
 \examples{
-\dontrun{
+\donttest{
 # Get last played match for a particular profile
-get_last_played(1 1, 4716773, host_region = "us")
+try(get_last_played(1, 4716773, host_region = "us"))
 }
 }
 \references{

@@ -56,14 +56,16 @@ Provides both league (i.e. bronze, silver, etc.) and tier (1, 2, 3) player count
 Data is only available for season 28 and higher.
 }
 \examples{
-\dontrun{
+\donttest{
 # Get league counts for Season 35, LotV 2v2, randomly gathered teams,
 # Bronze league, Korean region.
-data <- get_league_counts(season_id = 35,
-                    queue_id = 202,
-                    team_type = 1,
-                    league_id = 0,
-                    host_region = "kr")
+try({
+    data <- get_league_counts(season_id = 35,
+                              queue_id = 202,
+                              team_type = 1,
+                              league_id = 0,
+                              host_region = "kr")
+})
 }
 }
 \references{

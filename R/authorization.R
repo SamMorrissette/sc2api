@@ -95,12 +95,11 @@ set_token <- function(client_id, client_secret, access_token, verbose = FALSE) {
 #' @param access_token An OAuth 2.0 access token required to use the Blizzard API. Access tokens can be
 #'    obtained by using \code{set_token} with a valid client ID and client secret.
 #' @rdname authorization
-#' @examples \dontrun{
+#' @examples \donttest{
 #' # Ensure that a valid token is currently set as an environment variable
 #' validate_token()
-#'
 #' # Check if a token is valid
-#' valid_token("TEST TOKEN")
+#' validate_token("TEST TOKEN")
 #' }
 #' @export
 validate_token <- function(access_token) {
@@ -122,10 +121,9 @@ validate_token <- function(access_token) {
 
 
 #' @rdname authorization
-#' @examples \dontrun{
+#' @examples
 #' # Remove token from environment variable
 #' unset_token()
-#' }
 #' @export
 unset_token <- function() {
   Sys.unsetenv("BLIZZ_TOKEN")

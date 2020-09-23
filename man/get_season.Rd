@@ -24,9 +24,9 @@ information on regionality, refer to
 Provides the current season ID, starting date, and ending date.
 }
 \examples{
-\dontrun{
+\donttest{
 # Obtain current season information for the European region
-get_season(region_id = 2)
+try(get_season(region_id = 2))
 }
 }
 \references{

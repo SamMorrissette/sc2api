@@ -7,14 +7,16 @@
 #'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
 #'    }
 #' @note Data is only available for season 28 and higher.
-#' @examples \dontrun{
+#' @examples \donttest{
 #' # Get league counts for Season 35, LotV 2v2, randomly gathered teams,
 #' # Bronze league, Korean region.
-#' data <- get_league_counts(season_id = 35,
-#'                     queue_id = 202,
-#'                     team_type = 1,
-#'                     league_id = 0,
-#'                     host_region = "kr")
+#' try({
+#'     data <- get_league_counts(season_id = 35,
+#'                               queue_id = 202,
+#'                               team_type = 1,
+#'                               league_id = 0,
+#'                               host_region = "kr")
+#' })
 #' }
 #' @return A list with tier counts and the overall league count.
 #' @export
@@ -43,14 +45,16 @@ get_league_counts <- function(season_id, queue_id, team_type, league_id, host_re
 #'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
 #'    }
 #' @note Data is only available for season 28 and higher.
-#' @examples \dontrun{
+#' @examples \donttest{
 #' # Get all ladder ID's for Season 35, LotV 2v2, randomly gathered teams,
 #' # Bronze league, Korean region.
-#' data <- get_ladder_ids(season_id = 35,
-#'                        queue_id = 202,
-#'                        team_type = 1,
-#'                        league_id = 0,
-#'                        host_region = "kr")
+#' try({
+#'     data <- get_ladder_ids(season_id = 35,
+#'                            queue_id = 202,
+#'                            team_type = 1,
+#'                            league_id = 0,
+#'                            host_region = "kr")
+#' })
 #' }
 #' @return List of ladder ID's separated by tier. For grandmaster league, an integer is returned.
 #' @export
@@ -72,9 +76,9 @@ get_ladder_ids <- function(season_id, queue_id, team_type, league_id, host_regio
 #'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
 #'    }
 #' @note Data is only available for season 28 and higher.
-#' @examples \dontrun{
+#' @examples \donttest{
 #' # Get last played match for a particular profile
-#' get_last_played(1 1, 4716773, host_region = "us")
+#' try(get_last_played(1, 4716773, host_region = "us"))
 #' }
 #' @export
 get_last_played <- function(region_id, realm_id, profile_id, host_region = "us") {

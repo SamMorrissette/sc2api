@@ -47,10 +47,10 @@ Provides metadata for an individual's profile including their display name, prof
 and avatar URL.
 }
 \examples{
-\dontrun{
+\donttest{
 # Request profile metadata of a particular profile in the European region and
 # European realm.
-get_metadata(region_id = 2, realm_id = 1, host_region = 3437681)
+try(get_metadata(region_id = 2, realm_id = 1, host_region = 3437681))
 }
 }
 \references{

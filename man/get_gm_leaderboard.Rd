@@ -28,9 +28,9 @@ information such as player profile information, records (match record, MMR, etc.
 This API call is currently not supported for the China region (region_id = 5).
 }
 \examples{
-\dontrun{
+\donttest{
 # Obtain GM leaderboard for the Korea region
-get_gm_leaderboard(region_id = 3)
+try(get_gm_leaderboard(region_id = 3))
 }
 }
 \references{

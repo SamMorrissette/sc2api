@@ -21,14 +21,14 @@
 #'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
 #'    }
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # Request static data of profiles in the EU region. Request is sent through
 #' # the U.S. host region.
-#' get_static(region_id = 2, host_region = "us")
+#' try(get_static(region_id = 2, host_region = "us"))
 #'
 #' # Request static data of profiles in the China region. The request must be
 #' # sent to the China gateway.
-#' get_static(region_id = 5, host_region = "cn")
+#' try(get_static(region_id = 5, host_region = "cn"))
 #' }
 #'
 #' @export
@@ -75,10 +75,10 @@ get_static <- function(region_id, host_region = "us") {
 #'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
 #'    }
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # Request profile metadata of a particular profile in the European region and
 #' # European realm.
-#' get_metadata(region_id = 2, realm_id = 1, host_region = 3437681)
+#' try(get_metadata(region_id = 2, realm_id = 1, host_region = 3437681))
 #' }
 #' @export
 #'
@@ -104,9 +104,9 @@ get_metadata <- function(region_id, realm_id, profile_id, host_region = "us") {
 #'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
 #'    }
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # Request profile summary of a particular profile in the U.S. region and U.S. realm.
-#' get_profile(region_id = 1, realm_id = 1, profile_id = 4716773)
+#' try(get_profile(region_id = 1, realm_id = 1, profile_id = 4716773))
 #' }
 #' @export
 #'
@@ -131,9 +131,9 @@ get_profile <-  function(region_id, realm_id, profile_id, host_region = "us") {
 #'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
 #'    }
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # Request ladder summary of a particular profile in the U.S. region and U.S. realm.
-#' get_ladder_summary(region_id = 1, realm_id = 1, profile_id = 4716773)
+#' try(get_ladder_summary(region_id = 1, realm_id = 1, profile_id = 4716773))
 #' }
 #' @export
 #'
@@ -163,15 +163,17 @@ get_ladder_summary <- function(region_id, realm_id, profile_id, host_region = "u
 #'    \item \href{https://develop.battle.net/documentation/guides/regionality-and-apis}{Regionality and APIs}
 #'    }
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # Obtaining the overall ladder performance of a profile.
-#' ladderData <- get_ladder_summary(region_id = 1, realm_id = 1, profile_id = 4716773)
+#' try({
+#'     ladderData <- get_ladder_summary(region_id = 1, realm_id = 1, profile_id = 4716773)
 #'
-#' #Choose a single ladder ID
-#' ladderID <- ladderData$allLadderMemberships$ladderId[1]
+#'     # Choose a single ladder ID
+#'     ladderID <- ladderData$allLadderMemberships$ladderId[1]
 #'
-#' # Get full ladder information and the profile's performance in this ladder
-#' get_ladder(region_id = 1, realm_id = 1, profile_id = 4716773, ladder_id = ladderID)
+#'     # Get full ladder information and the profile's performance in this ladder
+#'     get_ladder(region_id = 1, realm_id = 1, profile_id = 4716773, ladder_id = ladderID)
+#' })
 #' }
 #' @export
 #'

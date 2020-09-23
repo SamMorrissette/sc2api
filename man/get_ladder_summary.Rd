@@ -46,9 +46,9 @@ information on regionality, refer to
 Provides a detailed list of ladder membership, profile showcases, and placement matches.
 }
 \examples{
-\dontrun{
+\donttest{
 # Request ladder summary of a particular profile in the U.S. region and U.S. realm.
-get_ladder_summary(region_id = 1, realm_id = 1, profile_id = 4716773)
+try(get_ladder_summary(region_id = 1, realm_id = 1, profile_id = 4716773))
 }
 }
 \references{

@@ -51,15 +51,17 @@ Provides information about a particular ladder and the individual's rank and sta
 ladder (i.e. rank, MMR, etc.).
 }
 \examples{
-\dontrun{
+\donttest{
 # Obtaining the overall ladder performance of a profile.
-ladderData <- get_ladder_summary(region_id = 1, realm_id = 1, profile_id = 4716773)
+try({
+    ladderData <- get_ladder_summary(region_id = 1, realm_id = 1, profile_id = 4716773)
 
-#Choose a single ladder ID
-ladderID <- ladderData$allLadderMemberships$ladderId[1]
+    # Choose a single ladder ID
+    ladderID <- ladderData$allLadderMemberships$ladderId[1]
 
-# Get full ladder information and the profile's performance in this ladder
-get_ladder(region_id = 1, realm_id = 1, profile_id = 4716773, ladder_id = ladderID)
+    # Get full ladder information and the profile's performance in this ladder
+    get_ladder(region_id = 1, realm_id = 1, profile_id = 4716773, ladder_id = ladderID)
+})
 }
 }
 \references{
