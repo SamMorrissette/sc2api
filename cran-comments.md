@@ -1,4 +1,4 @@
-##Resubmission
+## Resubmission
 This is a resubmission. As per CRAN feedback, I have:
 
 * Replaced \dontrun with \donttest in examples, where possible.
