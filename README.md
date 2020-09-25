@@ -8,6 +8,10 @@
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![Travis build
+status](https://travis-ci.org/SamMorrissette/sc2api.svg?branch=master)](https://travis-ci.org/github/SamMorrissette/sc2api)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/SC2API)](https://CRAN.R-project.org/package=SC2API)
+[![Travis build
 status](https://travis-ci.com/SamMorrissette/sc2api.svg?branch=master)](https://travis-ci.com/SamMorrissette/sc2api)
 <!-- badges: end -->
 
@@ -16,7 +20,13 @@ Blizzard Starcraft II API in the R programming language.
 
 ## Installation
 
-You can install the development version of SC2API from
+The SC2API is published on CRAN and can be installed using
+
+``` r
+install.packages('SC2API')
+```
+
+You can also install the development version of SC2API from
 [GitHub](https://github.com/) with:
 
 ``` r
@@ -55,5 +65,5 @@ data <- get_gm_leaderboard(1) # An argument of "1" corresponds to the North Amer
 top10 <- data[1:10,] # Extract the top 10 players
 playerMMR <- top10$mmr # Extract the "mmr" vector from each player. 
 print(playerMMR)
-#>  [1] 6609 6425 6338 6310 6293 6284 6228 6208 6157 6135
+#>  [1] 6609 6451 6425 6322 6276 6232 6208 6135 6106 6092
 ```

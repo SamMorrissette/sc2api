@@ -17,13 +17,21 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Travis build status](https://travis-ci.org/SamMorrissette/sc2api.svg?branch=master)](https://travis-ci.org/github/SamMorrissette/sc2api)
+[![CRAN status](https://www.r-pkg.org/badges/version/SC2API)](https://CRAN.R-project.org/package=SC2API)
 [![Travis build status](https://travis-ci.com/SamMorrissette/sc2api.svg?branch=master)](https://travis-ci.com/SamMorrissette/sc2api)
 <!-- badges: end -->
 
 The goal of SC2API is to build a simple and easy-to-use API wrapper for Blizzard Starcraft II API in the R programming language.
 
 ## Installation
-You can install the development version of SC2API from [GitHub](https://github.com/) with:
+
+The SC2API is published on CRAN and can be installed using 
+``` r
+install.packages('SC2API')
+```
+
+You can also install the development version of SC2API from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")

@@ -1,6 +1,6 @@
 Package: SC2API
 Title: Blizzard SC2 API Wrapper
-Version: 1.0.0
+Version: 1.0.0.9000
 Authors@R: person('Samuel', 'Morrissette', email = 'samuel.morrissette01@gmail.com', role = c('cre', 'aut'))
 Description: A wrapper for Blizzard's Starcraft II (a 2010 real-time strategy game) Application Programming Interface (API). All documented API calls are implemented in an easy-to-use and consistent manner.
 License: MIT + file LICENSE
